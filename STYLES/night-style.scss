@@ -1,0 +1,44 @@
+$gradient: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+$principal:#110038;
+$opposite: #FFFFFF;
+$secundary:#2E32FB;
+$boxShadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 $opposite;
+$buttonColor: #EE3EFE;
+$buttonColorActive: #9b33ae;
+
+
+
+
+@import "style.scss";
+
+.navBar {
+  .buttonDiv{
+  #ulTheme {
+    .firstLetter{
+      background: #2E32FB;}
+      color: #FFFFFF;}
+    li:active{
+      background: #2E32FB;
+      border: 1px solid rgba(51,53,143,0.20);
+      color: #FFFFFF;
+      }
+  }  
+  .button {
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  }
+}
+
+.uploadedContainer{
+  .button{
+    background:#A72CB3;
+    color: #FFFFFF;
+  }
+}
+#dayTheme{
+  color: $principal;
+  span{
+    color: $principal;
+  }
+}
+
+    

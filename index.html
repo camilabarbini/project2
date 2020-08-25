@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</title>
+    <link id="styles" rel="stylesheet" href="./STYLES/day-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <!-- BARRA SUPERIOR -->
+    <header>
+        <div class="barBox welcome">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </div>
+    </header>
+    <!-- LOGO Y BOTONES -->
+    <section class="navBar">
+        <img src="./assets/gifOF_logo.png" alt="logo" class="logo">
+        <div class="buttonDiv">
+            <button class="button" id="newGifoBtn">Crear Gifos</button>
+            <div class="dropdownBtn">
+                <button class="button">Elegir Tema</button>
+                <button class="button" id="drop"><img src="assets/dropdown.svg" class="dropdownImg"
+                        alt="desplegable"></button>
+            </div>
+            <span id="myGuifos"><span>M</span>is Guifos </span>
+            <ul id="ulTheme" class="ulTheme-none">
+                <li id="dayTheme">
+                    <span>S</span>ailor Day</li>
+                <li id="nightTheme"><span>S</span>ailor Night</li>
+            </ul>
+        </div>
+    </section>
+    <!-- BUSCADOR -->
+    <section class="searchSec">
+        <div class="searchBox">
+            <div class="barBox">Buscar</div>
+            <div class="searchWrapper">
+                <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete="off"
+                    id="input">
+                <button id="searchBtn">
+                    <span id="divButton">
+                        <img id="lupa" src="./assets/lupa_inactive.svg" alt="lupa">
+                        <span>Buscar</span>
+                    </span>
+                </button>
+            </div>
+            <div class="results">
+                <div class="divResults">Laughing</div>
+                <div class="divResults">Party</div>
+                <div class="divResults">Bears</div>
+            </div>
+        </div>
+    </section>
+    <!-- SUGERENCIAS  -->
+    <section class="body">
+        <section class="suggestingSec">
+            <div class="subtitles">Hoy te sugerimos:</div>
+            <div class="gifyBox" id="suggesting">
+                <div class="box">
+                    <div class="barBox">
+                        <div>#Jonathanvanness</div><img class="close" src="./assets/button-close.svg" alt="close">
+                    </div>
+                    <div class="gifos">
+                        <div class="loader"></div>
+                    </div>
+                    <button class="seeMore">Ver más...</button>
+                </div>
+                <div class="box">
+                    <div class="barBox">
+                        <div>#SailorMercury</div><img class="close" src="./assets/button-close.svg" alt="close">
+                    </div>
+                    <div class="gifos">
+                        <div class="loader"></div>
+                    </div>
+                    <button class="seeMore">Ver más...</button>
+                </div>
+                <div class="box">
+                    <div class="barBox">
+                        <div>#FabFive</div><img class="close" src="./assets/button-close.svg" alt="close">
+                    </div>
+                    <div class="gifos">
+                        <div class="loader"></div>
+                    </div>
+                    <button class="seeMore">Ver más...</button>
+                </div>
+                <div class="box">
+                    <div class="barBox">
+                        <div>#Unicorns&Rainbows</div><img class="close" src="./assets/button-close.svg" alt="close">
+                    </div>
+                    <div class="gifos">
+                        <div class="loader"></div>
+                    </div>
+                    <button class="seeMore">Ver más...</button>
+                </div>
+            </div>
+        </section>
+        <!-- TENDENCIAS -->
+        <section class="trendingSec">
+            <div class="subtitles">Tendencias:</div>
+            <div class="gifyBox" id="trending">
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos gifos2">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+                <div class="gifos">
+                    <div class="loader"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div id="toTheTop" style="display: none;"><img src="./assets/toTheTop.svg" alt=""></div>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

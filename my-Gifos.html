@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</title>
+    <link id="styles" rel="stylesheet" href="./STYLES/day-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <!-- BARRA SUPERIOR -->
+    <header>
+        <div class="barBox welcome">
+            ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803
+        </div>
+    </header>
+    <div class="body">
+        <!-- LOGO Y BOTONES -->
+        <section class="logoSection">
+            <img src="./assets/arrow.svg" alt="volver" id="backHome">
+            <img src="./assets/gifOF_logo.png" alt="logo" class="logo">
+        </section>
+        <section id="newGifoSec">
+            <div class="boxNewGifo" id="newGifo">
+                <div class="barBox">Crear guifos</div>
+                <div class="titleBox"><img src="./assets/window-img.png" alt="window image">
+                    <div>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</div>
+                </div>
+                <div class="steps">
+                    Crear tu <b>guifo</b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                    personalizados. Los pasos para crear tu guifo son:
+                    <p><b>1)</b> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <p><b>2)</b> Capturar tu momento guifo</p>
+                    <p><b>3)</b> Revisar el momento</p>
+                    <p><b>4)</b> Listo para subir y compartir!</p>
+                    ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
+                </div>
+                <div class="buttonBox">
+                    <button class="button" id="cancelGetMedia">Cancelar</button>
+                    <button class="button" id="startGetMedia">Comenzar</button>
+                </div>
+            </div>
+            <div class='boxNewGifo' id="captureBox" style="display: none;">
+                <div class='barBox'>
+                    <div class="description">Un chequeo antes de empezar</div>
+                    <img src="./assets/close.svg" alt="cerrar" id="closeCapture">
+                </div>
+                <div class='video' id="streamingVideoDiv">
+                    <div>
+                        <video id="streamingVideo"></video>
+                    </div>
+                </div>
+                <div class='recordedGif video' id="recordedGifDiv" style="display: none;">
+                    <div>
+                        <img id="recordedGif" alt="gif" src="https://media1.giphy.com/media/chVgEkHr9oYz4ZPGeU/giphy.gif?cid=ecf05e47ef935c46d54e6a5cbb95107ec0615572314e0e7f&rid=giphy.gif">
+                    </div>
+                </div>
+                <div class="canvas video" id="canvasDiv" style="display: none;">
+                    <div>
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div id='captureButton' class="captureSectionButton">
+                    <button><img id="camera" src='./assets/camera_light.svg' alt="camara"></button>
+                    <button>Capturar</button>
+                </div>
+                <div id="recordingBox" style="display: none">
+                    <div id='clock'>00:00:00:00</div>
+                    <div id='recordingButton' class="captureSectionButton">
+                        <button><img id="recording" src='./assets/recording.svg' alt="grabando"></button>
+                        <button id="finishRecorder">Listo</button>
+                    </div>
+                    <div id="recordedBox" style="display: none;">
+                        <div class="playContainer">
+                            <div class="playDiv">
+                                <img src="./assets/forward.svg" alt="play">
+                            </div>
+                            <div class="progressLine">
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                                <div class="lineParts"></div>
+                            </div>
+                        </div>
+                        <div id='recordedButton'>
+                            <button id="captureAgain" class="button">Repetir captura</button>
+                            <button id="uploadGuifo" class="button">Subir Guifo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="uploadingGuifoSec" id="uploadingGuifo" style="display: none;">
+                    <div class="uploadingGuifoContainer">
+                        <img src="./assets/globe_img.png" alt="Globo Terraqueo">
+                        <p>Estamos subiendo tu guifo...</p>
+                        <div class="progressLine">
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                            <div class="linePartsUploading"></div>
+                        </div>
+                        <p>Tiempo restante: <span>38 años </span>algunos minutos</p>
+                    </div>
+                    <button class="button" id="cancelUploading">Cancelar</button>
+                </div>
+            </div>
+            <div class='boxNewGifo' id="uploadedBox" style="display: none;">
+                <div class="barBox">Guifo Subido Con Éxito
+                    <img src="./assets/close.svg" alt="cerrar" id="close">
+                </div>
+
+                <div class="uploadedGuifoSec" id="uploadedGuifo">
+                    <div class="uploadedContainer">
+                        <div class="canvasUploaded video" id="canvasDivUploaded">
+                            <div>
+                                <canvas id="canvasUploaded"></canvas>
+                            </div>
+                        </div>
+                        <p>Guifo creado con éxito</p>
+                        <div class="button" id="copyGifUrl">Copiar Enlace Guifo</div>
+                        <div class="button" id="downloadGif">Descargar Guifo</div>
+                    </div>
+                    <div class="button" id="doneButton">Listo</div>
+                </div>
+            </div>
+        </section>
+        <section id="my-Guifos">
+            <div class="subtitles">Mis Gifos</div>
+            <div class="gifyBox" id="myGuifosBox"></div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.6/RecordRTC.js"></script>
+    <script src="./JS/my-Gifos.js"></script>
+</body>
+
+</html>
